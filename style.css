@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+body{
+    font-family: 'Poppins',
+    sans-serif;
+    background-color:#E5E5E5;
+}
+
+
+
+/* ******************
+
+Top player section START
+
+********************/
+ main{
+    display:grid;
+    justify-content: center;
+    align-items: center; 
+ } 
+.container{
+    width: 870px;
+    height: 679px;
+    background-color:#FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+.top-name{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 42px;
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:29px;
+    margin-left: 39px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player-name{
+    margin-left: 16px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.top-player hr{
+    width: 807px;
+    height: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #D1D1D1;
+}
+
+
+/* ******************
+
+Top player section END
+
+********************/
+
+
+
+/* ********************
+     TOP BLOG START 
+*********************/
+.top-blog-name{
+    font-size: 24px;
+    font-weight: 500;
+    color:#562EFF;
+    margin-left: 39px;
+    margin-bottom: 31px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog-thumbnail{
+    
+    margin-right: 16px;
+    margin-left: 39px;
+}
+/* .blog-details, .blog-text{
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 20px;
+} */
+.by-color{
+    color:#9F9F9F;
+    font-weight: 400;
+    font-size: 16px;
+}
+.author-color{
+    color:#562EFF;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* ********************
+     TOP BLOG END 
+*********************/
+
+
+
+/* ********************
+LATEST COURSE PART START
+********************* */
+.latest-course{
+    margin-top: 20px;
+    width: 870px;
+    height: 500px;
+   
+    background-color:#FFFFFF;
+    
+}
+.latest-course-name{
+    margin-top: 40px;
+    margin-left: 35px;
+    font-size: 24px;
+    font-weight: 500;
+    color:#562EFF;
+}
+.courses{
+    margin-left: 33px;
+    margin-right: 33px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+ 
+}
+.course{
+    padding: 10px;
+ border-radius: 10px;
+background-color: rgba(240, 232, 232, 0.719);
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.instructor{
+    color:#ED6B4F;
+}
+.rating{
+    margin-left: 20px;
+    font-weight: 700;
+}
+.clock{
+    padding: 5px 10px;
+    background-color:#FEE5DF;
+    border-radius: 15px;
+}
+.fa-star{
+    color:#FFC014;
+     font-size: 12px;
+     Height: 11.81px;
+}
+.fa-solid.fa-different{
+    color:#AEAEAE;
+}
+.fa-clock, .hour{
+    color:#ED6B4F;
+    font-weight: 700;
+}
+
+/* ********************
+LATEST COURSE PART END
+********************* */
+
+
+
+
+ /******************* 
+ MEDIA QUERY APPLIES 
+ *******************/
+
+ @media only screen and (max-width:688px) {
+     main{
+         display: grid;
+         justify-content: center;
+         align-items: center;
+     }
+   
+    .container{
+         width: 100%;
+         background-color: #E5E5E5;
+     }
+     .top-name{
+        text-align: center;
+     }
+      .players{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .player{
+          flex-direction: column;
+      }
+
+      .blogs{
+          grid-template-columns: repeat(1,1fr);
+      }
+      .blog{
+          flex-direction: column;
+      }
+      .top-blog-name{
+          text-align: center;
+      }
+
+      .latest-course{
+          width: 100%;
+      }
+    
+      .courses{
+          grid-template-columns: repeat(1,1fr);
+         grid-row-gap: 30px;
+      }
+      /* .course-thumbnail img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      } */
+   
+      .latest-course{
+          padding: 0;
+          margin: 0;
+          position: relative;
+          top:1300px;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          background-color:#E5E5E5;;
+          
+      }
+ }
+
+ @media only screen and (min-width:688px) and (max-width:992px){
+    /* main {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    } */
+     .container{
+         margin-top: 400px;
+        background-color: #E5E5E5;
+     }
+     .players{
+         grid-template-columns: repeat(2,1fr);
+     }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+.courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+}
+    .latest-course {
+        position: relative;
+        /* top:200px; */
+        display: grid;
+        background-color: #E5E5E5;
+    
+    }
+ }
