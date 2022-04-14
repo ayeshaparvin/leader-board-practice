@@ -224,19 +224,23 @@ LATEST COURSE PART END
       }
 
       .latest-course{
+          
           width: 100%;
       }
-    
+     .latest-course-name{
+         text-align: center;
+     }
       .courses{
           grid-template-columns: repeat(1,1fr);
          grid-row-gap: 30px;
+         margin-left: 35px;
       }
-      /* .course-thumbnail img{
+      .course-thumbnail img{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-      } */
+      }
    
       .latest-course{
           padding: 0;
